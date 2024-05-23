@@ -48,7 +48,6 @@ const PincodeLookup = () => {
             onChange={(e) => setPincode(e.target.value)}
             placeholder="Enter Pincode"
           />
-          <h1>to test netlify continuous deployment</h1>
           <button onClick={fetchPincodeData}>Lookup</button>
           {loading && <div className="loader-container"><div class="loader"></div></div>}
           {error && <div className="error">{error}</div>}
